@@ -10,7 +10,7 @@ def stock_picker(stocks)
     days = []
 
     stocks.each_with_index do |value, index|
-        if value < lowest
+        if value < lowest do
             lowest = value
             min_index = index
             next
