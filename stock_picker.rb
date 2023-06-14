@@ -10,13 +10,13 @@ def stock_picker(stocks)
     days = []
 
     stocks.each_with_index do |value, index|
-        if value < lowest do
+        if value < lowest
             lowest = value
             min_index = index
             next
         end
         
-        if value - lowest > profit do
+        if value - lowest > profit
             profit = value - lowest
             days = [min_index, index]
         end    
@@ -24,4 +24,4 @@ def stock_picker(stocks)
     days
 end
 
-puts stock_picker([17,3,6,9,15,8,6,1,10])
+p stock_picker([17,3,6,9,15,8,6,1,10])
